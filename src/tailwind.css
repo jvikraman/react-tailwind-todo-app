@@ -1,0 +1,4 @@
+/* Tailwind's default styles & utilities to start with. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
