@@ -16,11 +16,8 @@
     "tailwindcss": "^1.4.6"
   },
   "scripts": {
-    "build:tailwind": "postcss src/tailwind.css -o src/build/tailwind.css",
-    "watch:tailwind": "postcss -w src/tailwind.css -o src/build/tailwind.css",
-    "start": "run-p watch:tailwind start:react",
-    "start:react": "react-scripts start",
-    "prebuild": "npm run build:tailwind",
+    "build:styles": "tailwind build src/styles/tailwind.css -o src/styles/index.css",
+    "start": "npm run build:styles && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -12,6 +12,10 @@
 /build
 /src/build
 
+# The below `index.css` file get's built during runtime and it's very large
+# due to the tailwind build. So we can skip adding it to the codebase
+/src/styles/index.css
+
 # misc
 .DS_Store
 .env.local
